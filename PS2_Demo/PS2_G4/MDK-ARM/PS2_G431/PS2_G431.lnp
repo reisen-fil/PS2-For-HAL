@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"ps2_g431\startup_stm32g431xx.o"
+"ps2_g431\main.o"
+"ps2_g431\gpio.o"
+"ps2_g431\stm32g4xx_it.o"
+"ps2_g431\stm32g4xx_hal_msp.o"
+"ps2_g431\stm32g4xx_hal_tim.o"
+"ps2_g431\stm32g4xx_hal_tim_ex.o"
+"ps2_g431\stm32g4xx_hal_pwr_ex.o"
+"ps2_g431\stm32g4xx_hal.o"
+"ps2_g431\stm32g4xx_hal_rcc.o"
+"ps2_g431\stm32g4xx_hal_rcc_ex.o"
+"ps2_g431\stm32g4xx_hal_flash.o"
+"ps2_g431\stm32g4xx_hal_flash_ex.o"
+"ps2_g431\stm32g4xx_hal_flash_ramfunc.o"
+"ps2_g431\stm32g4xx_hal_gpio.o"
+"ps2_g431\stm32g4xx_hal_exti.o"
+"ps2_g431\stm32g4xx_hal_dma.o"
+"ps2_g431\stm32g4xx_hal_dma_ex.o"
+"ps2_g431\stm32g4xx_hal_pwr.o"
+"ps2_g431\stm32g4xx_hal_cortex.o"
+"ps2_g431\system_stm32g4xx.o"
+"ps2_g431\delay.o"
+"ps2_g431\ps2_get.o"
+--strict --scatter "PS2_G431\PS2_G431.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PS2_G431.map" -o PS2_G431\PS2_G431.axf

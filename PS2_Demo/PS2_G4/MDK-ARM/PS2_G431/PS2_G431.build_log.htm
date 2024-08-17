@@ -1,0 +1,230 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 863906650@qq.com, 1, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.16.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\工程项目\项目\外设\PS2模块(HAL库)\PS2_G431\MDK-ARM\PS2_G431.uvprojx
+Project File Date:  08/11/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'PS2_G431'
+compiling stm32g4xx_hal_tim_ex.c...
+compiling stm32g4xx_hal_tim.c...
+compiling stm32g4xx_it.c...
+compiling stm32g4xx_hal_msp.c...
+compiling gpio.c...
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling main.c...
+compiling stm32g4xx_hal_exti.c...
+compiling stm32g4xx_hal.c...
+compiling stm32g4xx_hal_flash.c...
+compiling stm32g4xx_hal_dma.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling delay.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling system_stm32g4xx.c...
+compiling stm32g4xx_hal_pwr.c...
+compiling stm32g4xx_hal_cortex.c...
+PS2/PS2_Get.c(49): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   49 |                         DO_H; //<CA><E4><B3><F6>一位<BF><D8><D6><C6>位
+      |                         ^~~~
+PS2/PS2_Get.h(12): note: expanded from macro 'DO_H'
+   12 | #define DO_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,SET)        //<C3><FC><C1><EE>位<B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(52): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   52 |                         DO_L;
+      |                         ^~~~
+PS2/PS2_Get.h(13): note: expanded from macro 'DO_L'
+   13 | #define DO_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,RESET)         //<C3><FC><C1><EE>位<B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(54): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   54 |                 CLK_H; //时<D6><D3><C0><AD><B8><DF>
+      |                 ^~~~~
+PS2/PS2_Get.h(18): note: expanded from macro 'CLK_H'
+   18 | #define CLK_H   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,SET)     //时<D6><D3><C0><AD><B8><DF>
+      |                 ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(56): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   56 |                 CLK_L;
+      |                 ^~~~~
+PS2/PS2_Get.h(19): note: expanded from macro 'CLK_L'
+   19 | #define CLK_L   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,RESET)      //时<D6><D3><C0><AD><B5><CD>
+      |                 ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(58): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   58 |                 CLK_H;
+      |                 ^~~~~
+PS2/PS2_Get.h(18): note: expanded from macro 'CLK_H'
+   18 | #define CLK_H   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,SET)     //时<D6><D3><C0><AD><B8><DF>
+      |                 ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(71): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   71 |         CS_L;
+      |         ^~~~
+PS2/PS2_Get.h(16): note: expanded from macro 'CS_L'
+   16 | #define CS_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,RESET)       //CS<C0><AD><B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(74): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   74 |         CS_H;
+      |         ^~~~
+PS2/PS2_Get.h(15): note: expanded from macro 'CS_H'
+   15 | #define CS_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,SET)       //CS<C0><AD><B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(79): warning: non-void function does not return a value [-Wreturn-type]
+   79 | }
+      | ^
+PS2/PS2_Get.c(92): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   92 |         CS_L;
+      |         ^~~~
+PS2/PS2_Get.h(16): note: expanded from macro 'CS_L'
+   16 | #define CS_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,RESET)       //CS<C0><AD><B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(99): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+   99 |                         CLK_H;
+      |                         ^~~~~
+PS2/PS2_Get.h(18): note: expanded from macro 'CLK_H'
+   18 | #define CLK_H   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,SET)     //时<D6><D3><C0><AD><B8><DF>
+      |                 ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(101): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  101 |                         CLK_L;
+      |                         ^~~~~
+PS2/PS2_Get.h(19): note: expanded from macro 'CLK_L'
+   19 | #define CLK_L   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,RESET)      //时<D6><D3><C0><AD><B5><CD>
+      |                 ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(103): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  103 |                         CLK_H;
+      |                         ^~~~~
+PS2/PS2_Get.h(18): note: expanded from macro 'CLK_H'
+   18 | #define CLK_H   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,SET)     //时<D6><D3><C0><AD><B8><DF>
+      |                 ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(109): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  109 |         CS_H;
+      |         ^~~~
+PS2/PS2_Get.h(15): note: expanded from macro 'CS_H'
+   15 | #define CS_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,SET)       //CS<C0><AD><B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(207): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  207 |         CS_L;
+      |         ^~~~
+PS2/PS2_Get.h(16): note: expanded from macro 'CS_L'
+   16 | #define CS_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,RESET)       //CS<C0><AD><B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(218): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  218 |         CS_H;
+      |         ^~~~
+PS2/PS2_Get.h(15): note: expanded from macro 'CS_H'
+   15 | #define CS_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,SET)       //CS<C0><AD><B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(228): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  228 |         CS_L;
+      |         ^~~~
+PS2/PS2_Get.h(16): note: expanded from macro 'CS_L'
+   16 | #define CS_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,RESET)       //CS<C0><AD><B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(235): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  235 |         CS_H;
+      |         ^~~~
+PS2/PS2_Get.h(15): note: expanded from macro 'CS_H'
+   15 | #define CS_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,SET)       //CS<C0><AD><B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(245): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  245 |         CS_L;
+      |         ^~~~
+PS2/PS2_Get.h(16): note: expanded from macro 'CS_L'
+   16 | #define CS_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,RESET)       //CS<C0><AD><B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(256): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  256 |         CS_H;
+      |         ^~~~
+PS2/PS2_Get.h(15): note: expanded from macro 'CS_H'
+   15 | #define CS_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,SET)       //CS<C0><AD><B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(266): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  266 |         CS_L;
+      |         ^~~~
+PS2/PS2_Get.h(16): note: expanded from macro 'CS_L'
+   16 | #define CS_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,RESET)       //CS<C0><AD><B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(277): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  277 |         CS_H;
+      |         ^~~~
+PS2/PS2_Get.h(15): note: expanded from macro 'CS_H'
+   15 | #define CS_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,SET)       //CS<C0><AD><B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(287): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  287 |         CS_L;
+      |         ^~~~
+PS2/PS2_Get.h(16): note: expanded from macro 'CS_L'
+   16 | #define CS_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,RESET)       //CS<C0><AD><B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(294): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  294 |         CS_H;
+      |         ^~~~
+PS2/PS2_Get.h(15): note: expanded from macro 'CS_H'
+   15 | #define CS_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,SET)       //CS<C0><AD><B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+PS2/PS2_Get.c(304): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  304 |         CS_L;
+      |         ^~~~
+PS2/PS2_Get.h(16): note: expanded from macro 'CS_L'
+   16 | #define CS_L            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,RESET)       //CS<C0><AD><B5><CD>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~~~
+PS2/PS2_Get.c(315): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+  315 |         CS_H;
+      |         ^~~~
+PS2/PS2_Get.h(15): note: expanded from macro 'CS_H'
+   15 | #define CS_H            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,SET)       //CS<C0><AD><B8><DF>
+      |                         ~~~~~~~~~~~~~~~~~                  ^~~
+25 warnings generated.
+compiling PS2_Get.c...
+linking...
+Program Size: Code=5034 RO-data=522 RW-data=48 ZI-data=1696  
+FromELF: creating hex file...
+"PS2_G431\PS2_G431.axf" - 0 Error(s), 25 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32G4xx_DFP.1.6.0.pack
+                Keil::STM32G4xx_DFP@1.6.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_PS2_G431
+  D:/Keil_v5/ARM/PACK/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.6.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
